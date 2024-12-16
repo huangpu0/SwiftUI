@@ -11,7 +11,11 @@ import SwiftUI
 struct SwiftUIDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            K_01_Text()
+            K_02_TextField()
         }
+    }
+    
+    func keyBoardConfig() -> Void {
+       // IQKeyboardManager.shared.isEnabled = true
     }
 }

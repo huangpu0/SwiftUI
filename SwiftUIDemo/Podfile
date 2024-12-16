@@ -1,0 +1,9 @@
+
+platform :ios, '15.0'
+
+target 'SwiftUIDemo' do
+  use_frameworks!
+
+  
+
+end

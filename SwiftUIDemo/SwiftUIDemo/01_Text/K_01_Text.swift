@@ -15,8 +15,8 @@ struct K_01_Text: View {
             /// 默认
             Text("SwiftUIahshajhjdhajshdjas")
                 .padding(8)
-                .background(.red)
-                .foregroundColor(.orange)
+                .background(Color.hexFF0000)
+                .foregroundColor(.white)
                 .font(.PFRegular(18))
                 .lineLimit(1)
             /// 多行文本对其方式

@@ -15,7 +15,4 @@ struct SwiftUIDemoApp: App {
         }
     }
     
-    func keyBoardConfig() -> Void {
-       // IQKeyboardManager.shared.isEnabled = true
-    }
 }

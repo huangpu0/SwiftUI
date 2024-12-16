@@ -88,20 +88,20 @@
 				83562F372D0FB57100620B80 /* Assets.xcassets */,
 				83562F382D0FB57100620B80 /* ContentView.swift */,
 				83562F432D0FB6A600620B80 /* Utils */,
-				83562F402D0FB58400620B80 /* Text01 */,
-				83562F482D10060600620B80 /* K02TextField */,
+				83562F402D0FB58400620B80 /* 01_Text */,
+				83562F482D10060600620B80 /* 02_TextField */,
 				83562F392D0FB57100620B80 /* SwiftUIDemo.entitlements */,
 				83562F3A2D0FB57100620B80 /* SwiftUIDemoApp.swift */,
 			);
 			path = SwiftUIDemo;
 			sourceTree = "<group>";
 		};
-		83562F402D0FB58400620B80 /* Text01 */ = {
+		83562F402D0FB58400620B80 /* 01_Text */ = {
 			isa = PBXGroup;
 			children = (
 				83562F412D0FB5AD00620B80 /* K_01_Text.swift */,
 			);
-			path = Text01;
+			path = 01_Text;
 			sourceTree = "<group>";
 		};
 		83562F432D0FB6A600620B80 /* Utils */ = {
@@ -113,12 +113,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		83562F482D10060600620B80 /* K02TextField */ = {
+		83562F482D10060600620B80 /* 02_TextField */ = {
 			isa = PBXGroup;
 			children = (
 				83562F492D10064400620B80 /* K_02_TextField.swift */,
 			);
-			path = K02TextField;
+			path = 02_TextField;
 			sourceTree = "<group>";
 		};
 		C8C5D6F84BB39124D18DD892 /* Frameworks */ = {
@@ -140,7 +140,6 @@
 				83562F152D0FB4F200620B80 /* Sources */,
 				83562F162D0FB4F200620B80 /* Frameworks */,
 				83562F172D0FB4F200620B80 /* Resources */,
-				6C1C0CE7CCBF4B35C1FF4BD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,23 +217,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C1C0CE7CCBF4B35C1FF4BD8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

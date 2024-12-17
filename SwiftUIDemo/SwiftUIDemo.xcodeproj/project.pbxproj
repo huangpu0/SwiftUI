@@ -17,6 +17,8 @@
 		83562F472D0FB80B00620B80 /* Corlor_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F462D0FB80B00620B80 /* Corlor_Ext.swift */; };
 		83562F4A2D10064400620B80 /* K_02_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F492D10064400620B80 /* K_02_TextField.swift */; };
 		83562F4D2D11066800620B80 /* K_03_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F4C2D11066800620B80 /* K_03_Button.swift */; };
+		83562F502D111AA200620B80 /* K_04_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F4F2D111AA200620B80 /* K_04_Image.swift */; };
+		83562F522D111B5A00620B80 /* K_04.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 83562F512D111B5A00620B80 /* K_04.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		83562F462D0FB80B00620B80 /* Corlor_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corlor_Ext.swift; sourceTree = "<group>"; };
 		83562F492D10064400620B80 /* K_02_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_02_TextField.swift; sourceTree = "<group>"; };
 		83562F4C2D11066800620B80 /* K_03_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_03_Button.swift; sourceTree = "<group>"; };
+		83562F4F2D111AA200620B80 /* K_04_Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_04_Image.swift; sourceTree = "<group>"; };
+		83562F512D111B5A00620B80 /* K_04.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = K_04.bundle; sourceTree = "<group>"; };
 		E2433145D8A5E2E3369D4FA7 /* Pods_SwiftUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3C0AA07CFBBCFECBDF0540 /* Pods-SwiftUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +97,7 @@
 				83562F402D0FB58400620B80 /* 01_Text */,
 				83562F482D10060600620B80 /* 02_TextField */,
 				83562F4B2D11063A00620B80 /* 03_Button */,
+				83562F4E2D111A8300620B80 /* 04_Image */,
 				83562F392D0FB57100620B80 /* SwiftUIDemo.entitlements */,
 				83562F3A2D0FB57100620B80 /* SwiftUIDemoApp.swift */,
 			);
@@ -130,6 +135,15 @@
 				83562F4C2D11066800620B80 /* K_03_Button.swift */,
 			);
 			path = 03_Button;
+			sourceTree = "<group>";
+		};
+		83562F4E2D111A8300620B80 /* 04_Image */ = {
+			isa = PBXGroup;
+			children = (
+				83562F4F2D111AA200620B80 /* K_04_Image.swift */,
+				83562F512D111B5A00620B80 /* K_04.bundle */,
+			);
+			path = 04_Image;
 			sourceTree = "<group>";
 		};
 		C8C5D6F84BB39124D18DD892 /* Frameworks */ = {
@@ -202,6 +216,7 @@
 			files = (
 				83562F3C2D0FB57100620B80 /* Preview Assets.xcassets in Resources */,
 				83562F3D2D0FB57100620B80 /* Assets.xcassets in Resources */,
+				83562F522D111B5A00620B80 /* K_04.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +255,7 @@
 				83562F472D0FB80B00620B80 /* Corlor_Ext.swift in Sources */,
 				83562F452D0FB6CD00620B80 /* Font_Ext.swift in Sources */,
 				83562F422D0FB5AD00620B80 /* K_01_Text.swift in Sources */,
+				83562F502D111AA200620B80 /* K_04_Image.swift in Sources */,
 				83562F3E2D0FB57100620B80 /* ContentView.swift in Sources */,
 				83562F3F2D0FB57100620B80 /* SwiftUIDemoApp.swift in Sources */,
 				83562F4D2D11066800620B80 /* K_03_Button.swift in Sources */,

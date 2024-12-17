@@ -16,6 +16,7 @@
 		83562F452D0FB6CD00620B80 /* Font_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F442D0FB6CD00620B80 /* Font_Ext.swift */; };
 		83562F472D0FB80B00620B80 /* Corlor_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F462D0FB80B00620B80 /* Corlor_Ext.swift */; };
 		83562F4A2D10064400620B80 /* K_02_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F492D10064400620B80 /* K_02_TextField.swift */; };
+		83562F4D2D11066800620B80 /* K_03_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F4C2D11066800620B80 /* K_03_Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		83562F442D0FB6CD00620B80 /* Font_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font_Ext.swift; sourceTree = "<group>"; };
 		83562F462D0FB80B00620B80 /* Corlor_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corlor_Ext.swift; sourceTree = "<group>"; };
 		83562F492D10064400620B80 /* K_02_TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_02_TextField.swift; sourceTree = "<group>"; };
+		83562F4C2D11066800620B80 /* K_03_Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_03_Button.swift; sourceTree = "<group>"; };
 		E2433145D8A5E2E3369D4FA7 /* Pods_SwiftUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3C0AA07CFBBCFECBDF0540 /* Pods-SwiftUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 				83562F432D0FB6A600620B80 /* Utils */,
 				83562F402D0FB58400620B80 /* 01_Text */,
 				83562F482D10060600620B80 /* 02_TextField */,
+				83562F4B2D11063A00620B80 /* 03_Button */,
 				83562F392D0FB57100620B80 /* SwiftUIDemo.entitlements */,
 				83562F3A2D0FB57100620B80 /* SwiftUIDemoApp.swift */,
 			);
@@ -119,6 +122,14 @@
 				83562F492D10064400620B80 /* K_02_TextField.swift */,
 			);
 			path = 02_TextField;
+			sourceTree = "<group>";
+		};
+		83562F4B2D11063A00620B80 /* 03_Button */ = {
+			isa = PBXGroup;
+			children = (
+				83562F4C2D11066800620B80 /* K_03_Button.swift */,
+			);
+			path = 03_Button;
 			sourceTree = "<group>";
 		};
 		C8C5D6F84BB39124D18DD892 /* Frameworks */ = {
@@ -231,6 +242,7 @@
 				83562F422D0FB5AD00620B80 /* K_01_Text.swift in Sources */,
 				83562F3E2D0FB57100620B80 /* ContentView.swift in Sources */,
 				83562F3F2D0FB57100620B80 /* SwiftUIDemoApp.swift in Sources */,
+				83562F4D2D11066800620B80 /* K_03_Button.swift in Sources */,
 				83562F4A2D10064400620B80 /* K_02_TextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +378,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftUI;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -407,6 +420,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftUI;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

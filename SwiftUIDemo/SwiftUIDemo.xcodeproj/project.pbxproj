@@ -27,6 +27,8 @@
 		83562F662D12628E00620B80 /* K_06_Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F652D12628E00620B80 /* K_06_Slider.swift */; };
 		83562F692D126A6A00620B80 /* K_07_Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F682D126A6A00620B80 /* K_07_Picker.swift */; };
 		83562F6B2D12761C00620B80 /* K_08_DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F6A2D12761C00620B80 /* K_08_DatePicker.swift */; };
+		83562F6F2D12975C00620B80 /* K_09_Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F6E2D12975C00620B80 /* K_09_Alert.swift */; };
+		83562F712D12A55B00620B80 /* CusAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F702D12A55B00620B80 /* CusAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		83562F652D12628E00620B80 /* K_06_Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_06_Slider.swift; sourceTree = "<group>"; };
 		83562F682D126A6A00620B80 /* K_07_Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_07_Picker.swift; sourceTree = "<group>"; };
 		83562F6A2D12761C00620B80 /* K_08_DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_08_DatePicker.swift; sourceTree = "<group>"; };
+		83562F6E2D12975C00620B80 /* K_09_Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_09_Alert.swift; sourceTree = "<group>"; };
+		83562F702D12A55B00620B80 /* CusAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusAlertView.swift; sourceTree = "<group>"; };
 		E2433145D8A5E2E3369D4FA7 /* Pods_SwiftUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3C0AA07CFBBCFECBDF0540 /* Pods-SwiftUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +194,7 @@
 				83562F642D12626A00620B80 /* 06_Slider */,
 				83562F672D126A5500620B80 /* 07_Picker */,
 				83562F6C2D12762500620B80 /* 08_DatePicker */,
+				83562F6D2D12972B00620B80 /* 09_Alert */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -232,6 +237,15 @@
 				83562F6A2D12761C00620B80 /* K_08_DatePicker.swift */,
 			);
 			path = 08_DatePicker;
+			sourceTree = "<group>";
+		};
+		83562F6D2D12972B00620B80 /* 09_Alert */ = {
+			isa = PBXGroup;
+			children = (
+				83562F6E2D12975C00620B80 /* K_09_Alert.swift */,
+				83562F702D12A55B00620B80 /* CusAlertView.swift */,
+			);
+			path = 09_Alert;
 			sourceTree = "<group>";
 		};
 		C8C5D6F84BB39124D18DD892 /* Frameworks */ = {
@@ -345,7 +359,9 @@
 				83562F662D12628E00620B80 /* K_06_Slider.swift in Sources */,
 				83562F452D0FB6CD00620B80 /* Font_Ext.swift in Sources */,
 				83562F5B2D1174D900620B80 /* MineView.swift in Sources */,
+				83562F712D12A55B00620B80 /* CusAlertView.swift in Sources */,
 				83562F422D0FB5AD00620B80 /* K_01_Text.swift in Sources */,
+				83562F6F2D12975C00620B80 /* K_09_Alert.swift in Sources */,
 				83562F692D126A6A00620B80 /* K_07_Picker.swift in Sources */,
 				83562F502D111AA200620B80 /* K_04_Image.swift in Sources */,
 				83562F3E2D0FB57100620B80 /* TabBarView.swift in Sources */,

@@ -9,7 +9,14 @@ import SwiftUI
 
 struct UIKitView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        //CusNavigationView.init(navTitle: "sakldkla").frame(height: 44)
+        
+            
+        VStack {
+            Text("kasjlajdkjsakjakjdkajskdsakdjaksdjkasjdkasjdkasjdksajdkjasdkjaksjdkajdksjadkjaskdjaks")
+            Spacer()
+        }.background(.blue)
+        
     }
 }
 

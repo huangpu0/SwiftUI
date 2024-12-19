@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B711528AFFA2A4D562762B4 /* Pods_SwiftUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2433145D8A5E2E3369D4FA7 /* Pods_SwiftUIDemo.framework */; };
 		83323AB52D13BA2800567D8B /* BlockKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83323AB42D13BA2800567D8B /* BlockKit.swift */; };
+		83323AB82D13CB5800567D8B /* K_04_Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83323AB72D13CB5800567D8B /* K_04_Group.swift */; };
 		83562F3C2D0FB57100620B80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83562F352D0FB57100620B80 /* Preview Assets.xcassets */; };
 		83562F3D2D0FB57100620B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83562F372D0FB57100620B80 /* Assets.xcassets */; };
 		83562F3E2D0FB57100620B80 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F382D0FB57100620B80 /* TabBarView.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		7384E42A4A32D41759BA6E19 /* Pods-SwiftUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		83323AB42D13BA2800567D8B /* BlockKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockKit.swift; sourceTree = "<group>"; };
+		83323AB72D13CB5800567D8B /* K_04_Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_04_Group.swift; sourceTree = "<group>"; };
 		83562F192D0FB4F200620B80 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83562F352D0FB57100620B80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83562F372D0FB57100620B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 				ED3C0AA07CFBBCFECBDF0540 /* Pods-SwiftUIDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		83323AB62D13CADD00567D8B /* 04_Group */ = {
+			isa = PBXGroup;
+			children = (
+				83323AB72D13CB5800567D8B /* K_04_Group.swift */,
+			);
+			path = 04_Group;
 			sourceTree = "<group>";
 		};
 		83562F102D0FB4F200620B80 = {
@@ -264,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				83562F732D12B33F00620B80 /* LayoutView.swift */,
+				83323AB62D13CADD00567D8B /* 04_Group */,
 				836CB7A92D13AD5E00B438F9 /* 03_ScrollView */,
 				83562F782D12C04A00620B80 /* 02_List */,
 				83562F752D12B9C800620B80 /* 01_ZStack */,
@@ -414,6 +425,7 @@
 				83562F422D0FB5AD00620B80 /* K_01_Text.swift in Sources */,
 				83562F6F2D12975C00620B80 /* K_09_Alert.swift in Sources */,
 				83562F7A2D12C06600620B80 /* K_02_List.swift in Sources */,
+				83323AB82D13CB5800567D8B /* K_04_Group.swift in Sources */,
 				83562F692D126A6A00620B80 /* K_07_Picker.swift in Sources */,
 				83562F502D111AA200620B80 /* K_04_Image.swift in Sources */,
 				83562F3E2D0FB57100620B80 /* TabBarView.swift in Sources */,

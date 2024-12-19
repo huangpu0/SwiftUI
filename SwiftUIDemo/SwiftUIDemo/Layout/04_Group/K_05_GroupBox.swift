@@ -13,7 +13,19 @@ struct K_05_GroupBox: View {
         GroupBox("Settings") {
             VStack(spacing: 10) {
                 HStack {
-                    Text("Hello World !11") 
+                    Text("Hello World !11")
+                }
+                HStack {
+                    Text("Hello World !22")
+                    Spacer()
+                }
+            }
+        }.padding()
+        
+        GroupBox {
+            VStack(spacing: 10) {
+                HStack {
+                    Text("Hello World !11")
                 }
                 HStack {
                     Text("Hello World !22")
@@ -33,8 +45,8 @@ struct K_05_GroupBox: View {
                 }
             }
         } label: {
-            Text("自定义头部").font(.title).background(.red)
-        }
+            Text("自定义头部").font(.title)
+        }.padding().colorMultiply(.hexFF0000) // 调整背景的色调、会影响子视图显示的颜色
 
         
         

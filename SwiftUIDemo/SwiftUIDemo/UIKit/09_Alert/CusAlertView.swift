@@ -12,20 +12,13 @@ struct CusAlertView: View {
     
     // 绑定变量，用于控制弹窗的显示与隐藏
     @Binding var isPresented: Bool
-    
-    typealias cancelBlock = () -> Void
-    typealias sureBlock = () -> Void
-    
+        
     var title: String
     var sub_title: String
     var cancel: String
-    var block1: cancelBlock?
+    var block1: NoParamsBlock?
     var sure: String
-    var block2: cancelBlock?
-    
-   
-   
-    
+    var block2: NoParamsBlock?
     
     var body: some View {
         ZStack {

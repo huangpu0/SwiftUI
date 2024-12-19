@@ -7,32 +7,44 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TabBarView: View {
+    
+    @State var selection:Int = 0
+    
+    init() {
+        // 设置选中和非选中文字颜色
+        let appearance = UITabBarAppearance()
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.black,
+                                                                         .font: UIFont.systemFont(ofSize: 13)]
+        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.red,
+                                                                           .font:UIFont.boldSystemFont(ofSize: 13)]
+        appearance.shadowImage = UIImage()
+        appearance.shadowColor = .clear
+        appearance.backgroundColor = .white
+        /// 调整文字位置
+        appearance.stackedLayoutAppearance.normal.titlePositionAdjustment =  UIOffset(horizontal: 0, vertical: 0)
+        
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     
     var body: some View {
         VStack {
-            TabView {
+            TabView (selection: $selection) {
                 UIKitView().tabItem {
-                    Label("UIKit", image: "icon_tab10")
-                }
+                    Label("UIKit", image: selection != 0 ? "icon_tab10":"icon_tab11")
+                }.tag(0)
+                LayoutView().tabItem {
+                    Label("Layout", image: selection != 1 ? "icon_tab10":"icon_tab11")
+                }.tag(1)
                 HomeView().tabItem {
-                    Label("首页", image: "icon_tab20")
-                }
+                    Label("首页", image: selection != 2 ? "icon_tab20":"icon_tab21")
+                }.tag(2)
                 MineView().tabItem {
-                    Label("我的", image: "icon_tab30")
-                }.badge(12)
+                    Label("我的", image: selection != 3 ? "icon_tab30":"icon_tab31")
+                }.tag(3).badge(12)
             }
-        }.onAppear {
-            UITabBar.appearance().unselectedItemTintColor = .black
-            UITabBarItem.appearance().badgeColor = .red
-            UITabBar.appearance().backgroundColor = .yellow
-            UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0, vertical: 5)
-            UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: UIColor.red,
-                                                              .font: UIFont.boldSystemFont(ofSize: 14)],
-                                                             for: .normal)
-            UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: UIColor.red,
-                                                              .font: UIFont.boldSystemFont(ofSize: 14)],
-                                                             for: .selected)
         }
         
     }
@@ -40,5 +52,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    TabBarView()
 }

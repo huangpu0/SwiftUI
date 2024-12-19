@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CusAlertView: View {
     
-    
     // 绑定变量，用于控制弹窗的显示与隐藏
     @Binding var isPresented: Bool
         

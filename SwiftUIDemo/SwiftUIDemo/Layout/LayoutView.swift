@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LayoutView: View {
     
-    let datas: [String] = ["ZStack", "List-Section", "ScrollView"]
+    let datas: [String] = ["ZStack", "List-Section", "ScrollView", "Group", "GroupBox", "Form", "Grid"]
     
     var body: some View {
         NavigationView {
@@ -21,6 +21,10 @@ struct LayoutView: View {
                         case 0: K_01_ZStack()
                         case 1: K_02_List()
                         case 2: K_03_ScrollView()
+                        case 3: K_04_Group()
+                        case 4: K_05_GroupBox()
+                        case 5: K_06_Form()
+                        case 6: K_07_Grid()
                         default: K_01_ZStack()
                         }
                     } label: {

@@ -10,6 +10,7 @@
 		5B711528AFFA2A4D562762B4 /* Pods_SwiftUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2433145D8A5E2E3369D4FA7 /* Pods_SwiftUIDemo.framework */; };
 		83323AB52D13BA2800567D8B /* BlockKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83323AB42D13BA2800567D8B /* BlockKit.swift */; };
 		83323AB82D13CB5800567D8B /* K_04_Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83323AB72D13CB5800567D8B /* K_04_Group.swift */; };
+		83323ABA2D13E81F00567D8B /* K_05_GroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83323AB92D13E81F00567D8B /* K_05_GroupBox.swift */; };
 		83562F3C2D0FB57100620B80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83562F352D0FB57100620B80 /* Preview Assets.xcassets */; };
 		83562F3D2D0FB57100620B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83562F372D0FB57100620B80 /* Assets.xcassets */; };
 		83562F3E2D0FB57100620B80 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F382D0FB57100620B80 /* TabBarView.swift */; };
@@ -41,6 +42,7 @@
 		7384E42A4A32D41759BA6E19 /* Pods-SwiftUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIDemo/Pods-SwiftUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		83323AB42D13BA2800567D8B /* BlockKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockKit.swift; sourceTree = "<group>"; };
 		83323AB72D13CB5800567D8B /* K_04_Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_04_Group.swift; sourceTree = "<group>"; };
+		83323AB92D13E81F00567D8B /* K_05_GroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_05_GroupBox.swift; sourceTree = "<group>"; };
 		83562F192D0FB4F200620B80 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83562F352D0FB57100620B80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		83562F372D0FB57100620B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				83323AB72D13CB5800567D8B /* K_04_Group.swift */,
+				83323AB92D13E81F00567D8B /* K_05_GroupBox.swift */,
 			);
 			path = 04_Group;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				83562F692D126A6A00620B80 /* K_07_Picker.swift in Sources */,
 				83562F502D111AA200620B80 /* K_04_Image.swift in Sources */,
 				83562F3E2D0FB57100620B80 /* TabBarView.swift in Sources */,
+				83323ABA2D13E81F00567D8B /* K_05_GroupBox.swift in Sources */,
 				83562F632D12595500620B80 /* K_05_Toggle.swift in Sources */,
 				83562F3F2D0FB57100620B80 /* SwiftUIDemoApp.swift in Sources */,
 				83562F602D117C8200620B80 /* NavigationBar.swift in Sources */,

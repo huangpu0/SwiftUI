@@ -26,6 +26,14 @@ struct TabBarView: View {
         
         UITabBar.appearance().standardAppearance = appearance
         UITabBar.appearance().scrollEdgeAppearance = appearance
+        
+//        // 设置导航栏颜色
+//        let navibarAppearance = UINavigationBarAppearance()
+//        navibarAppearance.configureWithOpaqueBackground()
+//        navibarAppearance.backgroundColor = .white
+//        UINavigationBar.appearance().standardAppearance = navibarAppearance
+//        UINavigationBar.appearance().scrollEdgeAppearance = navibarAppearance
+        
     }
     
     

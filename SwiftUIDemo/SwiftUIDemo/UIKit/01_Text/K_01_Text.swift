@@ -96,6 +96,7 @@ struct K_01_Text: View {
                     let path = url.absoluteString
                     if path.hasPrefix("111") {
                         print("111...")
+                        self.presentationMode.wrappedValue.dismiss()
                     } else if path.hasPrefix("222") {
                         print("222...")
                     }

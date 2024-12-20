@@ -61,7 +61,9 @@ struct K_02_TextField: View {
             /// 剩余填充满
             Spacer()
             
-        }
+        }.NavigationBar(false, backBlock: {
+            
+        }, title: "TextField")
         
         
     }

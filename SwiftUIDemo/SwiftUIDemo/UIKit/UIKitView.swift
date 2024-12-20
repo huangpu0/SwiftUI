@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UIKitView: View {
     
-    let datas: [String] = ["Text", "TextField", "Button", "Image", "Toggle", "Slider", "Picker", "DatePicker", "Alert"]
+    let datas: [String] = ["Text", "TextField", "Button", "Image", "Toggle", "Slider", "Picker", "DatePicker", "Alert", "WebView", "UIViewController"]
     
     var body: some View {
         
@@ -29,6 +29,8 @@ struct UIKitView: View {
                         case 6: K_07_Picker()
                         case 7: K_08_DatePicker()
                         case 8: K_09_Alert()
+                        case 9: K_10_WebView()
+                        case 10: K_11_ViewControllerPage()
                         default: K_01_Text()
                         }
                     } label: {
@@ -38,8 +40,12 @@ struct UIKitView: View {
                 }
                 
             }
-            .navigationTitle("UIKit")
-            .navigationBarTitleDisplayMode(.inline)
+            
+            .NavigationBar(false, backBlock: {
+                
+            }, title: "UIKIT")
+            
+            
         }
         
         

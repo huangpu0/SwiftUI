@@ -19,74 +19,94 @@ struct K_03_Button: View {
                 print("文字按钮")
             }.font(.PFMedium(18))
             
-            Button {
-                print("图片文字点击")
-            } label: {
-                HStack {
-                    Image("icon_勾选")
-                    Text("图片文字按钮")
-                }
-            }.frame(maxWidth: .infinity, maxHeight: 30)
-                .foregroundColor(.white)
-            .background(.brown).cornerRadius(4).padding()
-            
-            Button {
-                print("图片文字点击")
-            } label: {
-                HStack {
-                    Image("icon_勾选")
-                    Text("buttonStyle按钮")
-                }
-            }.buttonStyle(.borderedProminent)
-            
-            Button {
-                print("图片文字点击")
-            } label: {
-                HStack {
-                    Text("buttonStyle按钮")
-                    Image("icon_勾选")
-                }
-            }.buttonStyle(.borderedProminent)
-
-
-            /// 正确设置圆角边框
-            Button {
-                print("图片文字点击")
-            } label: {
-                HStack {
-                    Image("icon_勾选")
-                    Text("边框背景按钮")
-                }
-            }.frame(maxWidth: .infinity, maxHeight: 30)
-                .foregroundColor(.white)
-                .background(.brown)
-                .cornerRadius(15)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15, style: .circular).stroke(.red, lineWidth: 1)
-                ).padding()
-            
-            /// 正确设置圆角边框
-            Button {
-                print("图片文字点击")
-                buttonClicked = !buttonClicked
-            } label: {
-                
-                HStack {
-                    Image("icon_勾选")
-                    if buttonClicked {
-                        Text("Selected状态按钮")
-                    }else {
-                        Text("Normal状态按钮")
+            if #available(iOS 15.0, *) {
+                Button {
+                    print("图片文字点击")
+                } label: {
+                    HStack {
+                        Image("icon_勾选")
+                        Text("图片文字按钮")
                     }
+                }.frame(maxWidth: .infinity, maxHeight: 30)
+                    .foregroundColor(.white)
+                    .background(Color.brown).cornerRadius(4).padding()
+            } else {
+                // Fallback on earlier versions
+            }
+            
+            if #available(iOS 15.0, *) {
+                Button {
+                    print("图片文字点击")
+                } label: {
+                    HStack {
+                        Image("icon_勾选")
+                        Text("buttonStyle按钮")
+                    }
+                }.buttonStyle(.borderedProminent)
+            } else {
+                // Fallback on earlier versions
+            }
+            
+            if #available(iOS 15.0, *) {
+                Button {
+                    print("图片文字点击")
+                } label: {
+                    HStack {
+                        Text("buttonStyle按钮")
+                        Image("icon_勾选")
+                    }
+                }.buttonStyle(.borderedProminent)
+            } else {
+                // Fallback on earlier versions
+            }
+
+
+            /// 正确设置圆角边框
+            if #available(iOS 15.0, *) {
+                Button {
+                    print("图片文字点击")
+                } label: {
+                    HStack {
+                        Image("icon_勾选")
+                        Text("边框背景按钮")
+                    }
+                }.frame(maxWidth: .infinity, maxHeight: 30)
+                    .foregroundColor(.white)
+                    .background(Color.brown)
+                    .cornerRadius(15)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 15, style: .circular).stroke(.red, lineWidth: 1)
+                    ).padding()
+            } else {
+                // Fallback on earlier versions
+            }
+            
+            /// 正确设置圆角边框
+            if #available(iOS 15.0, *) {
+                Button {
+                    print("图片文字点击")
+                    buttonClicked = !buttonClicked
+                } label: {
                     
-                }
-            }.frame(maxWidth: .infinity, maxHeight: 30)
-                .foregroundColor(buttonClicked ? .red:.white)
-                .background(buttonClicked ? .blue:.brown)
-                .cornerRadius(15)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 15, style: .circular).stroke(.red, lineWidth: 1)
-                ).padding()
+                    HStack {
+                        Image("icon_勾选")
+                        if buttonClicked {
+                            Text("Selected状态按钮")
+                        }else {
+                            Text("Normal状态按钮")
+                        }
+                        
+                    }
+                }.frame(maxWidth: .infinity, maxHeight: 30)
+                    .foregroundColor(buttonClicked ? .red:.white)
+                    .background(buttonClicked ? Color.blue:Color.brown)
+                    .cornerRadius(15)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 15, style: .circular).stroke(.red, lineWidth: 1)
+                    ).padding()
+            } else {
+                // Fallback on earlier versions
+            }
             
         }
         

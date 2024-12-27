@@ -20,7 +20,11 @@ struct UIKitView: View {
                 HStack {
                     NavigationLink {
                         switch index {
-                        case 0: K_01_Text()
+                        case 0: if #available(iOS 15, *) {
+                            K_01_Text()
+                        } else {
+                            // Fallback on earlier versions
+                        }
                         case 1: K_02_TextField()
                         case 2: K_03_Button()
                         case 3: K_04_Image()
@@ -31,7 +35,11 @@ struct UIKitView: View {
                         case 8: K_09_Alert()
                         case 9: K_10_WebView()
                         case 10: K_11_ViewControllerPage()
-                        default: K_01_Text()
+                        default: if #available(iOS 15, *) {
+                            K_01_Text()
+                        } else {
+                            // Fallback on earlier versions
+                        }
                         }
                     } label: {
                         Text(datas[index])

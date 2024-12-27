@@ -47,7 +47,7 @@ struct K_07_Grid: View {
                 ForEach(datas, id: \.self) { item in
                     Text(String(item))
                         .frame(width: UIScreen.main.bounds.width/2-16, height: 50, alignment: .center)
-                        .background(.blue)
+                        .background(Color.blue)
                         .cornerRadius(10)
                         .foregroundColor(.white)
                         .font(.title)

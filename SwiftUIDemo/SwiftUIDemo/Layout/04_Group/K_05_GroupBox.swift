@@ -10,17 +10,21 @@ import SwiftUI
 struct K_05_GroupBox: View {
     var body: some View {
         
-        GroupBox("Settings") {
-            VStack(spacing: 10) {
-                HStack {
-                    Text("Hello World !11")
+        if #available(iOS 15.0, *) {
+            GroupBox("Settings") {
+                VStack(spacing: 10) {
+                    HStack {
+                        Text("Hello World !11")
+                    }
+                    HStack {
+                        Text("Hello World !22")
+                        Spacer()
+                    }
                 }
-                HStack {
-                    Text("Hello World !22")
-                    Spacer()
-                }
-            }
-        }.padding()
+            }.padding()
+        } else {
+            // Fallback on earlier versions
+        }
         
         GroupBox {
             VStack(spacing: 10) {

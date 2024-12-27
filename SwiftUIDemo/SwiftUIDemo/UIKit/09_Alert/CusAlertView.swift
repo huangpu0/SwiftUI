@@ -68,7 +68,7 @@ struct CusAlertView: View {
                 
                
                 
-            }.background(.white)
+            }.background(Color.white)
                 .cornerRadius(18)
                 .frame(minWidth: 300, maxWidth: .infinity)
                 .padding(.leading, 30)

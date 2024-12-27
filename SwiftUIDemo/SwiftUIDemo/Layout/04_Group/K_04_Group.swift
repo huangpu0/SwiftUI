@@ -19,9 +19,9 @@ struct K_04_Group: View {
                 Group {
                     Text("Hello World !33")
                     Text("Hello World !44")
-                }.background(.blue)
+                }.background(Color.blue)
                 
-            }.background(.red)
+            }.background(Color.red)
             
 //            Group {
 //                Text("Hello World !33")

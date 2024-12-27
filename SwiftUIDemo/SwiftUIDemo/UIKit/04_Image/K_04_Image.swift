@@ -33,30 +33,38 @@ struct K_04_Image: View {
         }
         
         Text("网络图片+切圆角")
-        Image(uiImage: self.uiImage ?? placeholderImage)
-            .resizable()
-            .onAppear(perform:
-                        downloadWebImage
-            )
-            .frame(width: 80,
-                   height: 80,
-                   alignment: .center)
-            .onTapGesture {
-                print("Tap ")
-            }.clipShape(Circle())
-            .overlay {
-                RoundedRectangle(cornerRadius: 40, style: .circular).stroke(.red, lineWidth: 3)
-            }
+        if #available(iOS 15.0, *) {
+            Image(uiImage: self.uiImage ?? placeholderImage)
+                .resizable()
+                .onAppear(perform:
+                            downloadWebImage
+                )
+                .frame(width: 80,
+                       height: 80,
+                       alignment: .center)
+                .onTapGesture {
+                    print("Tap ")
+                }.clipShape(Circle())
+                .overlay {
+                    RoundedRectangle(cornerRadius: 40, style: .circular).stroke(.red, lineWidth: 3)
+                }
+        } else {
+            // Fallback on earlier versions
+        }
         
         Text("AsyncImage+URL方式加载网络")
         if let url = URL(string: "https://picsum.photos/50/50?i=30") {
-            AsyncImage(url: url) { image in
-                image.resizable()
-                    .scaledToFill()
-                    .frame(width: 80, height: 80)
-                    .clipped()
-            } placeholder: {
-                Image.init(.icon勾选)
+            if #available(iOS 15.0, *) {
+                AsyncImage(url: url) { image in
+                    image.resizable()
+                        .scaledToFill()
+                        .frame(width: 80, height: 80)
+                        .clipped()
+                } placeholder: {
+                    Image.init(.icon勾选)
+                }
+            } else {
+                // Fallback on earlier versions
             }
             
         }

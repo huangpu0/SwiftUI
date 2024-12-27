@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15, *)
 struct K_01_Text: View {
     
     var text1: AttributedString {
@@ -114,5 +115,9 @@ struct K_01_Text: View {
 }
 
 #Preview {
-    K_01_Text()
+    if #available(iOS 15, *) {
+        K_01_Text()
+    } else {
+        // Fallback on earlier versions
+    }
 }

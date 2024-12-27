@@ -1,9 +1,9 @@
 
-platform :ios, '15.0'
+platform :ios, '14.0'
 
 target 'SwiftUIDemo' do
   use_frameworks!
-  
+  pod 'SDWebImageSwiftUI'
  
   
 

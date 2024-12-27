@@ -25,7 +25,11 @@ struct TabBarView: View {
         appearance.stackedLayoutAppearance.normal.titlePositionAdjustment =  UIOffset(horizontal: 0, vertical: 0)
         
         UITabBar.appearance().standardAppearance = appearance
-        UITabBar.appearance().scrollEdgeAppearance = appearance
+        if #available(iOS 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        } else {
+            // Fallback on earlier versions
+        }
         
 //        // 设置导航栏颜色
 //        let navibarAppearance = UINavigationBarAppearance()
@@ -49,9 +53,13 @@ struct TabBarView: View {
                 HomeView().tabItem {
                     Label("首页", image: selection != 2 ? "icon_tab20":"icon_tab21")
                 }.tag(2)
-                MineView().tabItem {
-                    Label("我的", image: selection != 3 ? "icon_tab30":"icon_tab31")
-                }.tag(3).badge(12)
+                if #available(iOS 15.0, *) {
+                    MineView().tabItem {
+                        Label("我的", image: selection != 3 ? "icon_tab30":"icon_tab31")
+                    }.tag(3).badge(12)
+                } else {
+                    // Fallback on earlier versions
+                }
             }
         }
         

@@ -107,7 +107,7 @@ struct K_01_Text: View {
                 
             })
             
-        }.navigationBarTitle(Text("Text"), displayMode: .inline)
+        }.NavigationBar(title: "Text")
         
         
     }

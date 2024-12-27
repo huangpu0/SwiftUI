@@ -1,5 +1,5 @@
 //
-//  CusNavigationView.swift
+//  NavigationView.swift
 //  SwiftUIDemo
 //
 //  Created by ycwh on 2024/12/17.
@@ -8,12 +8,13 @@
 import SwiftUI
  
 // 自定义导航栏视图修饰符
-struct CustomNavigationBar: ViewModifier {
+struct NavigationBarView: ViewModifier {
     
     /// 返回按钮
     @State var show_navBack: Bool = false
-    @State var navBarBackItem: String = ""
     @State var backBlock: NoParamsBlock?
+    
+    @Environment(\.presentationMode) var presentationMode
     
     /// 导航文字
     @State var navBarTitle: String = ""
@@ -21,25 +22,27 @@ struct CustomNavigationBar: ViewModifier {
     func body(content: Content) -> some View {
         content
             .navigationBarTitle(navBarTitle, displayMode: .inline)
+            .navigationBarBackButtonHidden()
             .navigationBarItems(leading: Button(action: {
                 if (backBlock != nil) {
                     backBlock?()
                 }else {
-                    
+                    presentationMode.wrappedValue.dismiss()
                 }
             }, label: {
                 if show_navBack {
-                    navBarBackItem.isEmpty ? Image(systemName: "chevron.left"):Image(navBarBackItem)
+                    Image(systemName: "chevron.left").foregroundColor(Color.black)
                 }
             }))
-            
+        
     }
+    
 }
  
 // 扩展View以使用CustomNavigationBar
 extension View {
-    func NavigationBar(_ showBack: Bool = true ,back: String = "", backBlock: NoParamsBlock?, title: String) -> some View {
-        self.modifier(CustomNavigationBar(show_navBack: showBack, navBarBackItem: back, backBlock: backBlock, navBarTitle: title))
+    func NavigationBar(_ showBack: Bool = true, backBlock: NoParamsBlock? = nil, title: String) -> some View {
+        self.modifier(NavigationBarView(show_navBack: showBack, backBlock: backBlock, navBarTitle: title))
     }
 }
  

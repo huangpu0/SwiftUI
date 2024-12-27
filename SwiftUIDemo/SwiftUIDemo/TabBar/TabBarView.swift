@@ -14,11 +14,8 @@ struct TabBarView: View {
     init() {
         // 设置选中和非选中文字颜色
         let appearance = UITabBarAppearance()
-        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.black,
-                                                                         .font: UIFont.systemFont(ofSize: 13)]
-        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.red,
-                                                                           .font:UIFont.boldSystemFont(ofSize: 13)]
-        appearance.shadowImage = UIImage()
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont.systemFont(ofSize: 13)]
+        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.red,.font:UIFont.boldSystemFont(ofSize: 13)]
         appearance.shadowColor = .clear
         appearance.backgroundColor = .white
         /// 调整文字位置
@@ -31,12 +28,15 @@ struct TabBarView: View {
             // Fallback on earlier versions
         }
         
-//        // 设置导航栏颜色
-//        let navibarAppearance = UINavigationBarAppearance()
-//        navibarAppearance.configureWithOpaqueBackground()
-//        navibarAppearance.backgroundColor = .white
-//        UINavigationBar.appearance().standardAppearance = navibarAppearance
-//        UINavigationBar.appearance().scrollEdgeAppearance = navibarAppearance
+        // 设置导航栏颜色
+        let navibarAppearance = UINavigationBarAppearance()
+        navibarAppearance.titleTextAttributes = [.foregroundColor: UIColor.black,.font:UIFont.boldSystemFont(ofSize: 15)]
+        navibarAppearance.configureWithOpaqueBackground()
+        navibarAppearance.backgroundColor = .white
+        navibarAppearance.shadowColor = .clear
+        
+        UINavigationBar.appearance().standardAppearance = navibarAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = navibarAppearance
         
     }
     
@@ -58,7 +58,9 @@ struct TabBarView: View {
                         Label("我的", image: selection != 3 ? "icon_tab30":"icon_tab31")
                     }.tag(3).badge(12)
                 } else {
-                    // Fallback on earlier versions
+                    MineView().tabItem {
+                        Label("我的", image: selection != 3 ? "icon_tab30":"icon_tab31")
+                    }.tag(3)
                 }
             }
         }

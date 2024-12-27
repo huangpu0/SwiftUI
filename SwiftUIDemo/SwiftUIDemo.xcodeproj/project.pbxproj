@@ -30,7 +30,7 @@
 		83562F572D1174B500620B80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F562D1174B500620B80 /* HomeView.swift */; };
 		83562F592D1174C700620B80 /* UIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F582D1174C700620B80 /* UIKitView.swift */; };
 		83562F5B2D1174D900620B80 /* MineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F5A2D1174D900620B80 /* MineView.swift */; };
-		83562F602D117C8200620B80 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F5F2D117C8200620B80 /* NavigationBar.swift */; };
+		83562F602D117C8200620B80 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F5F2D117C8200620B80 /* NavigationBarView.swift */; };
 		83562F632D12595500620B80 /* K_05_Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F622D12595500620B80 /* K_05_Toggle.swift */; };
 		83562F662D12628E00620B80 /* K_06_Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F652D12628E00620B80 /* K_06_Slider.swift */; };
 		83562F692D126A6A00620B80 /* K_07_Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83562F682D126A6A00620B80 /* K_07_Picker.swift */; };
@@ -69,7 +69,7 @@
 		83562F562D1174B500620B80 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		83562F582D1174C700620B80 /* UIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitView.swift; sourceTree = "<group>"; };
 		83562F5A2D1174D900620B80 /* MineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineView.swift; sourceTree = "<group>"; };
-		83562F5F2D117C8200620B80 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		83562F5F2D117C8200620B80 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		83562F622D12595500620B80 /* K_05_Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_05_Toggle.swift; sourceTree = "<group>"; };
 		83562F652D12628E00620B80 /* K_06_Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_06_Slider.swift; sourceTree = "<group>"; };
 		83562F682D126A6A00620B80 /* K_07_Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K_07_Picker.swift; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				83562F382D0FB57100620B80 /* TabBarView.swift */,
-				83562F5F2D117C8200620B80 /* NavigationBar.swift */,
+				83562F5F2D117C8200620B80 /* NavigationBarView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -505,7 +505,7 @@
 				83323ABA2D13E81F00567D8B /* K_05_GroupBox.swift in Sources */,
 				83562F632D12595500620B80 /* K_05_Toggle.swift in Sources */,
 				83562F3F2D0FB57100620B80 /* SwiftUIDemoApp.swift in Sources */,
-				83562F602D117C8200620B80 /* NavigationBar.swift in Sources */,
+				83562F602D117C8200620B80 /* NavigationBarView.swift in Sources */,
 				83562F4D2D11066800620B80 /* K_03_Button.swift in Sources */,
 				83562F6B2D12761C00620B80 /* K_08_DatePicker.swift in Sources */,
 				83562F4A2D10064400620B80 /* K_02_TextField.swift in Sources */,

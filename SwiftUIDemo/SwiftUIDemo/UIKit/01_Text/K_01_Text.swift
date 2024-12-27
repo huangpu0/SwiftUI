@@ -107,7 +107,7 @@ struct K_01_Text: View {
                 
             })
             
-        }.NavigationBar(title: "Text")
+        }.NavigationBar(title: "Text").hiddenTabBar
         
         
     }

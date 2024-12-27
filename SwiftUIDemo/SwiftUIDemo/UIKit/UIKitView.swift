@@ -53,7 +53,7 @@ struct UIKitView: View {
                     
                 }
                 
-            }.NavigationBar(false, title: "UIKIT")
+            }.NavigationBar(false, title: "UIKIT").showTabBar
             
             
         }

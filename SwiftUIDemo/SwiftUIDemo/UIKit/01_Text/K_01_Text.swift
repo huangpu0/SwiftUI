@@ -45,69 +45,74 @@ struct K_01_Text: View {
     
     var body: some View {
         
-        NavigationView {
-            VStack(content: {
+      
+            NavigationBar {
                 
-                /// 默认
-                Text("SwiftUIahshajhjdhajshdjas")
-                    .padding(8)
-                    .background(Color.hexFF0000)
-                    .foregroundColor(.white)
-                    .font(.PFRegular(18))
-                    .lineLimit(1)
-                /// 多行文本对其方式
-                    .multilineTextAlignment(.leading)
-                    .cornerRadius(20)
-                
-                
-                /// 分割线长度
-                Divider().background(Color.black).scaleEffect(.init(width: 1, height: 20))
-                
-                /// 富文本1
-                Text("SwiftUI1").font(.title).foregroundColor(.orange)
-                + Text("SwiftUI1").font(.title).foregroundColor(.blue)
-                
-                /// 富文本点击事件
-                HStack (spacing: 0, content: {
+                VStack(content: {
                     
-                    Text("富文本点击事件").font(.title)
-                    + Text("bold").font(.title)
+                    /// 默认
+                    Text("SwiftUIahshajhjdhajshdjas")
+                        .padding(8)
+                        .background(Color.hexFF0000)
+                        .foregroundColor(.white)
+                        .font(.PFRegular(18))
+                        .lineLimit(1)
+                    /// 多行文本对其方式
+                        .multilineTextAlignment(.leading)
+                        .cornerRadius(20)
                     
-                    Text("This is a link")
-                        .onTapGesture {
-                            // 在这里处理点击事件
-                            print("Link tapped!11112222")
+                    
+                    /// 分割线长度
+                    Divider().background(Color.black).scaleEffect(.init(width: 1, height: 20))
+                    
+                    /// 富文本1
+                    Text("SwiftUI1").font(.title).foregroundColor(.orange)
+                    + Text("SwiftUI1").font(.title).foregroundColor(.blue)
+                    
+                    /// 富文本点击事件
+                    HStack (spacing: 0, content: {
+                        
+                        Text("富文本点击事件").font(.title)
+                        + Text("bold").font(.title)
+                        
+                        Text("This is a link")
+                            .onTapGesture {
+                                // 在这里处理点击事件
+                                print("Link tapped!11112222")
+                            }
+                            .font(.title)
+                            .foregroundColor(.blue)
+                        
+                        
+                        
+                    }).background(.red)
+                    
+                    /// 图文混编
+                    HStack (spacing: 0, content: {
+                        let nv = Image(.icon勾选)
+                        Text("图文混编图文混编图文混编图文混编图文混编图文混编图\(nv)如果语言列表中没有中文，您可以在手表配对iPhone->设置通用->键盘->添加新键盘->简体中文->拼音-全键盘")
+                        
+                    }).background(.blue)
+                    
+                    /// 图文混编Link
+                    Text(text).environment(\.openURL, OpenURLAction(handler: { url in
+                        let path = url.absoluteString
+                        if path.hasPrefix("111") {
+                            print("111...")
+                            self.presentationMode.wrappedValue.dismiss()
+                        } else if path.hasPrefix("222") {
+                            print("222...")
                         }
-                        .font(.title)
-                        .foregroundColor(.blue)
+                        return .handled
+                    }))
                     
                     
-                    
-                }).background(.red)
+                })
                 
-                /// 图文混编
-                HStack (spacing: 0, content: {
-                    let nv = Image(.icon勾选)
-                    Text("图文混编图文混编图文混编图文混编图文混编图文混编图\(nv)如果语言列表中没有中文，您可以在手表配对iPhone->设置通用->键盘->添加新键盘->简体中文->拼音-全键盘")
-                    
-                }).background(.blue)
-                
-                /// 图文混编Link
-                Text(text).environment(\.openURL, OpenURLAction(handler: { url in
-                    let path = url.absoluteString
-                    if path.hasPrefix("111") {
-                        print("111...")
-                        self.presentationMode.wrappedValue.dismiss()
-                    } else if path.hasPrefix("222") {
-                        print("222...")
-                    }
-                    return .handled
-                }))
-                
-                
-            })
-            
-        }.NavigationBar(title: "Text").hiddenTabBar
+            }.navBackground(Color.orange)
+            .navTitle("Text")
+            .hiddenTabBar
+           
         
         
     }
